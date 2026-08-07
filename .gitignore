@@ -1,0 +1,22 @@
+__pycache__/
+*.pyc
+.venv/
+.venv314/
+venv/
+.pytest_cache/
+*.egg-info/
+output/
+*.docx
+!examples/*.docx
+pytest-cache-files-*/
+
+# Large offline wheel bundles (re-generate with scripts/download_wheels.ps1)
+wheels/*.whl
+wheels/*.tar.gz
+wheels/paddleocr/*.whl
+
+# Offline installers / model archives (keep local / USB only)
+OfflineSetup/
+offline_models/
+offline_models.part*.rar
+*.rar
