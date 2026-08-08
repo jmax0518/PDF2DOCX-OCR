@@ -10,7 +10,3 @@ output/
 !examples/*.docx
 pytest-cache-files-*/
 
-# Large split archives exceeding GitHub's per-file push limit
-offline_models.part*.rar
-wheels/*.rar
-

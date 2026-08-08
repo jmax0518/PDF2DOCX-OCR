@@ -1,0 +1,2 @@
+offline_models.part*.rar filter=lfs diff=lfs merge=lfs -text
+wheels/*.rar filter=lfs diff=lfs merge=lfs -text
