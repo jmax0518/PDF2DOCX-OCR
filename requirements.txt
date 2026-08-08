@@ -1,0 +1,17 @@
+# --- Core pipeline ---
+PyMuPDF>=1.24.0        # PDF parsing & rendering pages to images
+python-docx>=1.1.0     # Building editable .docx output
+Pillow>=10.0.0          # Image handling
+opencv-python-headless>=4.9.0.80  # Image pre-processing (deskew, denoise, binarize)
+tqdm>=4.66.0            # Progress bars
+langdetect>=1.0.9       # Optional: language auto-detection for metadata
+
+# --- OCR engine: Tesseract (default, lightweight, CPU-only) ---
+# Requires the Tesseract binary + language packs installed separately (see README.md)
+pytesseract>=0.3.13
+
+# --- OCR engine: PaddleOCR (default; best accuracy for multilingual/CJK) ---
+# Requires Python 3.10–3.12 (not 3.14). On Windows CPU, engine disables MKLDNN.
+paddlepaddle>=3.0.0
+paddleocr>=3.0.0
+paddlex[ocr]>=3.7.0
